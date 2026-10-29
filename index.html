@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F5F2EB" />
+    <title>Antariksh Das — Digital, with a pulse.</title>
+    <meta
+      name="description"
+      content="Independent creative developer crafting expressive websites, ambitious product interfaces, and serious systems. Explore the work of Antariksh Das."
+    />
+    <meta
+      property="og:title"
+      content="Antariksh Das — Digital, with a pulse."
+    />
+    <meta
+      property="og:description"
+      content="Expressive interfaces. Serious engineering. Websites and products built to make you feel something."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/social-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/anton.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/manrope.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("ad-theme") === "dark" ? "dark" : "light";
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+      try {
+        const savedMotion = localStorage.getItem("ad-motion-v2");
+        document.documentElement.dataset.motion =
+          savedMotion === "full"
+            ? "full"
+            : savedMotion === "reduced"
+              ? "reduced"
+              : "full";
+      } catch {
+        document.documentElement.dataset.motion = "full";
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Antariksh Das",
+        "jobTitle": "Creative Developer",
+        "email": "mailto:antarikshdasofficial@gmail.com",
+        "sameAs": [
+          "https://github.com/Anta18",
+          "https://www.linkedin.com/in/antariksh-das-ba34a3257"
+        ],
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Indian Institute of Technology Kharagpur"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
